@@ -70,3 +70,26 @@ Thanks to the following people for contributing to this repository.
 - [Developers of Solaar for providing information on HID++](https://github.com/pwr-Solaar/Solaar)
 - [Nestor Lopez Casado for providing Logitech documentation on the HID++ protocol](http://drive.google.com/folderview?id=0BxbRzx7vEV7eWmgwazJ3NUFfQ28)
 - Everyone listed in the contributors page
+
+
+# Personal Instruction
+- Clone repo
+- Build
+```bash
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
+- Run Daemon
+```bash
+sudo systemctl enable logid
+```
+- Set config:
+
+    Add or modify the logid.cgf file in /etc using the personal one in this repo
+- Restart Daemon
+```bash
+sudo systemctl restart logid
+```
